@@ -53,7 +53,7 @@ public class Test2 {
 		if (itemsToBrought < 10)
 			return itemsToBrought;
 		else
-			return 11 + getResult(itemsToBrought-10);
+			return 11 + getTotal(itemsToBrought-10);
 	}
 
 }
