@@ -41,9 +41,9 @@ public class Test2 {
 		
 		int priceOfAnItem = sc1.nextInt();
 		
-		int itemsToBrought = sc1.nextInt();
+		int noOfItemsBought = sc1.nextInt();
 		
-		int total= getTotal(itemsToBrought);
+		int total= getTotal(noOfItemsBought + moneySpent/priceOfAnItem);
 		
 		System.out.println("The total number of items (purchased + free items) = " + total);
 	}
