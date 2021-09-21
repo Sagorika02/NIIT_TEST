@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class test2 {
+
+	public static void main(String args[]){
+	      int day,n,m;
+	      
+	      
+	      Scanner sc1 = new Scanner(System.in);
+	      System.out.println("Enter the day medicine is taken on:");
+	      day = sc1.nextInt();
+	      
+	      Scanner sc2 = new Scanner(System.in);
+	      System.out.println("Next dose to be taken after: ");
+	      n = sc2.nextInt();
+
+	      if(n+day<=7) {
+	    	  m=day+n;
+	      }
+	      else if(n+day>7 && n<day) {
+	    	  m= n;
+	      }
+	      else if(n==7) {
+	    	  m= day;
+	      }
+	      else {
+	    	  m=n+day-7;
+	      }
+	      
+	      switch(m) {
+	      case 1: System.out.print("Your next dose should be taken on Sunday");
+	      break;
+	      
+	      case 2: System.out.print("Your next dose should be taken on Monday");
+	      break;
+	      
+	      case 3: System.out.print("Your next dose should be taken on Tuesday");
+	      break;
+	      
+	      case 4: System.out.print("Your next dose should be taken on Wednesday");
+	      break;
+	      
+	      case 5: System.out.print("Your next dose should be taken on Thursday");
+	      break;
+	      
+	      case 6: System.out.print("Your next dose should be taken on Friday");
+	      break;
+	      
+	      case 7: System.out.print("Your next dose should be taken on Saturday");
+	      break;
+	      
+	      }
+	      
+	}
+}

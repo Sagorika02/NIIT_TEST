@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Test1 {
+
+	public static void main(String args[]){
+	      int moneySpent, priceOfAnItem, noOfItemsBought;
+	      int total;
+	      
+	      Scanner sc1 = new Scanner(System.in);
+	      System.out.println("Enter money spent: ");
+	      moneySpent = sc1.nextInt();
+	      
+	      Scanner sc2 = new Scanner(System.in);
+	      System.out.println("Enter price of an item: ");
+	      priceOfAnItem = sc2.nextInt();
+	      
+	      Scanner sc3 = new Scanner(System.in);
+	      System.out.println("Enter no. of items already bought: ");
+	      noOfItemsBought = sc3.nextInt();
+	      
+	      int n = (moneySpent/priceOfAnItem) + noOfItemsBought;
+	      
+	      int d= n/10;
+	      
+	      total= n + d;
+	      
+	      System.out.print("The total number of items = "+total);
+	}
+}
