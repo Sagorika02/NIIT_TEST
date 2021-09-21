@@ -31,7 +31,7 @@ Using recursion:
 
 import java.util.*;
 
-public class TotalItems {
+public class Test2 {
 
 	public static void main(String[] args) {
 		
@@ -43,12 +43,12 @@ public class TotalItems {
 		
 		int itemsToBrought = sc1.nextInt();
 		
-		int result = getResult(itemsToBrought);
+		int total= getTotal(itemsToBrought);
 		
-		System.out.println("The total number of items (purchased + free items) = " + result);
+		System.out.println("The total number of items (purchased + free items) = " + total);
 	}
 	
-	public static int getResult(int itemsToBrought)
+	public static int getTotal(int itemsToBrought)
 	{
 		if (itemsToBrought < 10)
 			return itemsToBrought;
